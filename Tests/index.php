@@ -3,7 +3,7 @@
     <head>
 
         <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-        <title>jQuery async treeview</title>
+        <title>PHPCR navigator</title>
 
         <link rel="stylesheet" href="../assets/css/jquery.treeview.css" />
 
@@ -23,7 +23,7 @@
                 initTrees();
 
             });
-	</script>
+        </script>
 
 
     </head>
