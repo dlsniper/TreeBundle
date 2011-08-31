@@ -53,16 +53,14 @@ class PHPCRTreeTest extends \PHPUnit_Framework_TestCase
         
         $root = $this->getMockBuilder('Jackalope\Node')->
             disableOriginalConstructor()->
-            setMethods(array('getNodes'))->
             getMock();
         $root->expects($this->once())->
                 method('getNodes')->
                 with('*')->
                 will($this->returnValue($children));
                 
-        $session = $this->getMockBuilder('Jackalope\Session')->
+        $session = $this->getMockBuilder('PHPCR\SessionInterface')->
             disableOriginalConstructor()->
-            setMethods(array('getNode'))->
             getMock();
         
         $session->expects($this->once())->
