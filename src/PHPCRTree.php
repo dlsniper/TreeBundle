@@ -21,7 +21,6 @@ class PHPCRTree
         $root = $this->session->getNode($path);
 
         $tree = array();
-//var_dump($root->getNodes('*'));die('ukuyuyiu');
 
         foreach ($root->getNodes('*') as $name => $node) {
             $child = array(
