@@ -91,7 +91,7 @@ class PHPCRTreeTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(
             '[{"text":"anonimarmonisti","id":"\/com\/anonimarmonisti","hasChildren":true},{"text":"romereview","id":"\/com\/romereview","hasChildren":true},{"text":"5etto","id":"\/com\/5etto","hasChildren":true},{"text":"wordpress","id":"\/com\/wordpress","hasChildren":true}]',
-            $this->tree->getChildrenJSON('/com')
+            $this->tree->getJSONChildren('/com')
         );
     }
 
@@ -99,7 +99,7 @@ class PHPCRTreeTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(
             '[{"name":"jcr:createdBy","value":"user"},{"name":"jcr:created","value":{"date":"2011-08-31 11:02:39","timezone_type":3,"timezone":"Europe\/Berlin"}},{"name":"jcr:primaryType","value":"nt:folder"}]',
-            $this->tree->getPropertiesJSON('/com')
+            $this->tree->getJSONProperties('/com')
         );
     }
 }

@@ -15,8 +15,25 @@
 
         <script type="text/javascript">
             function initTrees() {
-                $("#test_tree").treeview({
-                    url: "test_source.php"
+                $("#tree").treeview({
+                    url:    "children.php",
+                    toggle: function() {
+                        $.ajax({
+                            url: "properties.php",
+                            dataType: "json",
+                            data: {
+                                root: this.id
+                            },
+                            success: function(response) {
+                                $("#properties").empty()
+                                $.each(response, function (index, property) {
+                                    $("#properties").append(
+                                        '<tr><td>' + this.name + '</td><td>' + this.value + '</td></tr>'
+                                    );
+                                });
+                            }
+                        });
+                    }
                 })
             }
             $(document).ready(function(){
@@ -29,8 +46,10 @@
     </head>
     <body>
 
-        <ul id="test_tree">
+        <ul id="tree">
         </ul>
+        
+        <table border="1" id="properties"></table>
 
     </body>
 </html>

@@ -16,7 +16,7 @@ class PHPCRTree
         $this->session = $session;
     }
     
-    public function getChildrenJSON($path)
+    public function getJSONChildren($path)
     {
         $root = $this->session->getNode($path);
 
@@ -37,21 +37,16 @@ class PHPCRTree
         return json_encode($children);
     }
 
-    public function getPropertiesJSON($path)
+    public function getJSONProperties($path)
     {
         $node = $this->session->getNode($path);
         $properties = array();
         
         foreach ($node->getPropertiesValues() as $name => $value) {
-//            if ($value instanceof DateTime) {
-//                $value = $value->format('d m Y hjjh');
-//            }
-            $property = array(
+            $properties[] = array(
                 "name" => $name,
                 "value" => $value,
-                
             );
-            $properties[] = $property;
         }
         
         return json_encode($properties);
