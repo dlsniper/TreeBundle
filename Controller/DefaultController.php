@@ -1,6 +1,6 @@
 <?php
 
-namespace Symfony\Cmf\Bundle\TreeBundle\Controller;
+namespace Ideato\Bundle\TreeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

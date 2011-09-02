@@ -1,6 +1,6 @@
 <?php
 
-namespace Symfony\Cmf\Bundle\TreeBundle\DependencyInjection;
+namespace Ideato\Bundle\TreeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

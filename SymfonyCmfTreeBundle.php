@@ -1,9 +1,9 @@
 <?php
 
-namespace Symfony\Cmf\Bundle\TreeBundle;
+namespace Ideato\Bundle\TreeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SymfonyCmfTreeBundle extends Bundle
+class IdeatoTreeBundle extends Bundle
 {
 }

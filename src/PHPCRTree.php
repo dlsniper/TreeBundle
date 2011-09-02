@@ -1,6 +1,6 @@
 <?php
 
-namespace Ideato\TreeBundle;
+namespace Ideato\Bundle\TreeBundle;
 
 /**
  * A simple class to get PHPCR trees in JSON format
