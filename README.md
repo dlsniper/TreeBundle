@@ -3,6 +3,20 @@
 This bundle wraps Jörn Zaefferer's Treeview jQuery plugin
 http://github.com/jzaefferer/jquery-treeview
 
+## Setup
+
+* Include CSS & JS files in your template
+* Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list
+* Provide *url* value pointing to a server-side-something returning lists of children for any given node ID.
+  Server must reply in JSON format, this is an example:
+
+    [
+        {"text":"anonimarmonisti","id":"\/com\/anonimarmonisti","hasChildren":true},
+        {"text":"romereview","id":"\/com\/romereview","hasChildren":false},
+        {"text":"5etto","id":"\/com\/5etto","hasChildren":true},
+        {"text":"wordpress","id":"\/com\/wordpress","hasChildren":true}
+    ]
+
 ## Example
 
     <html>
