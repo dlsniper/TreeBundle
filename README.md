@@ -1,4 +1,4 @@
-[TreeBundle](https://github.com/symfony-cmf/TreeBundle)
+# [TreeBundle](https://github.com/symfony-cmf/TreeBundle)
 
 This bundle wraps Jörn Zaefferer's Treeview jQuery plugin
 http://github.com/jzaefferer/jquery-treeview
