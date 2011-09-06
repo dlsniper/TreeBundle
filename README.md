@@ -8,14 +8,16 @@ http://github.com/jzaefferer/jquery-treeview
 * Include CSS & JS files in your template
 * Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list
 * Provide *url* value pointing to a server-side-something returning lists of children for any given node ID.
-  Server must reply in JSON format, this is an example:
+Server must reply in JSON format, this is an example:
+```json
+[
+    {"text":"anonimarmonisti","id":"\/com\/anonimarmonisti","hasChildren":true},
+    {"text":"romereview","id":"\/com\/romereview","hasChildren":false},
+    {"text":"5etto","id":"\/com\/5etto","hasChildren":true},
+    {"text":"wordpress","id":"\/com\/wordpress","hasChildren":true}
+]
+```
 
-    [
-        {"text":"anonimarmonisti","id":"\/com\/anonimarmonisti","hasChildren":true},
-        {"text":"romereview","id":"\/com\/romereview","hasChildren":false},
-        {"text":"5etto","id":"\/com\/5etto","hasChildren":true},
-        {"text":"wordpress","id":"\/com\/wordpress","hasChildren":true}
-    ]
 * More info on setup available on Treeview's [GitHub](http://github.com/jzaefferer/jquery-treeview)
 
 ## Example
