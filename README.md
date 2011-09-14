@@ -3,6 +3,12 @@
 This bundle wraps Jörn Zaefferer's Treeview jQuery plugin
 http://github.com/jzaefferer/jquery-treeview
 
+## Features
+
+* Nodes expanding/collapsing
+* Subtrees lazy loading via JSON replies to AJAX calls
+* 
+
 ## Setup
 
 ### Dependencies
@@ -27,6 +33,7 @@ Server must reply in JSON format, this is an example:
     ]
 ```
 
+* The optional *toggle* parameter is an hook to perform any needed action when a node is clicked.
 * More info on setup available on Treeview's [GitHub](http://github.com/jzaefferer/jquery-treeview)
 
 ## Example
