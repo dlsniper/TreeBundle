@@ -3,8 +3,14 @@
 This bundle wraps Jörn Zaefferer's Treeview jQuery plugin
 http://github.com/jzaefferer/jquery-treeview
 
+## Dependencies
+
+This bundle depends on jQuery.
+http://jquery.com/
+
 ## Setup
 
+* Install jQuery. [SonatajQueryBundle](https://github.com/sonata-project/SonatajQueryBundle) strongly suggested.
 * Include CSS & JS files in your template
 * Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list
 * Provide *url* value pointing to a server-side-something returning lists of children for any given node ID.
@@ -80,9 +86,3 @@ Server must reply in JSON format, this is an example:
             {% endblock %}
         </body>
     </html>
-
-
-## Dependencies
-
-This bundle depends on jQuery.
-http://jquery.com/
