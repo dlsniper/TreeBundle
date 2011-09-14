@@ -5,9 +5,9 @@ http://github.com/jzaefferer/jquery-treeview
 
 ## Features
 
-* Nodes expanding/collapsing
-* Subtrees lazy loading via JSON replies to AJAX calls
-* 
+* Nodes expanding/collapsing.
+* Subtrees lazy loading via JSON replies to AJAX calls.
+* Callback function when a node is toggled.
 
 ## Setup
 
@@ -19,8 +19,8 @@ http://jquery.com/
 ### How-to
 
 * Install jQuery. [SonatajQueryBundle](https://github.com/sonata-project/SonatajQueryBundle) strongly suggested.
-* Include CSS & JS files in your template
-* Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list
+* Include CSS & JS files in your template.
+* Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list.
 * Provide *url* value pointing to a server-side-something returning lists of children for any given node ID.
 Server must reply in JSON format, this is an example:
 
@@ -33,8 +33,8 @@ Server must reply in JSON format, this is an example:
     ]
 ```
 
-* The optional *toggle* parameter is an hook to perform any needed action when a node is clicked.
-* More info on setup available on Treeview's [GitHub](http://github.com/jzaefferer/jquery-treeview)
+* The optional *toggle* parameter is an hook to perform any further needed action when a node is clicked.
+* More info on setup available on Treeview's [GitHub](http://github.com/jzaefferer/jquery-treeview).
 
 ## Example
 
