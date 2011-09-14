@@ -3,12 +3,14 @@
 This bundle wraps Jörn Zaefferer's Treeview jQuery plugin
 http://github.com/jzaefferer/jquery-treeview
 
-## Dependencies
+## Setup
+
+### Dependencies
 
 This bundle depends on jQuery.
 http://jquery.com/
 
-## Setup
+### How-to
 
 * Install jQuery. [SonatajQueryBundle](https://github.com/sonata-project/SonatajQueryBundle) strongly suggested.
 * Include CSS & JS files in your template
