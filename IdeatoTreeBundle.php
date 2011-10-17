@@ -1,6 +1,6 @@
 <?php
 
-namespace Ideato\Bundle\TreeBundle;
+namespace Ideato\TreeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
