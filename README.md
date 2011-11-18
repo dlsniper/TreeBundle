@@ -63,14 +63,14 @@ Server must reply in JSON format, this is an example:
         <head>
             <title>CMF Sandbox - Treeview test</title>
 
-            <link href="/bundles/ideatotree/css/jquery.treeview.css" media="screen" type="text/css" rel="stylesheet" />
+            <link href="/bundles/symfonycmftree/css/jquery.treeview.css" media="screen" type="text/css" rel="stylesheet" />
 
             <script src="/bundles/sonatajquery/jquery-1.4.4.js" type="text/javascript"></script>
 
-            <script src="/bundles/ideatotree/js/jquery.cookie.js" type="text/javascript"></script>
-            <script src="/bundles/ideatotree/js/jquery.treeview.js" type="text/javascript"></script>
-            <script src="/bundles/ideatotree/js/jquery.treeview.edit.js" type="text/javascript"></script>
-            <script src="/bundles/ideatotree/js/jquery.treeview.async.js" type="text/javascript"></script>
+            <script src="/bundles/symfonycmftree/js/jquery.cookie.js" type="text/javascript"></script>
+            <script src="/bundles/symfonycmftree/js/jquery.treeview.js" type="text/javascript"></script>
+            <script src="/bundles/symfonycmftree/js/jquery.treeview.edit.js" type="text/javascript"></script>
+            <script src="/bundles/symfonycmftree/js/jquery.treeview.async.js" type="text/javascript"></script>
 
             <script type="text/javascript">
                 function initTrees() {
