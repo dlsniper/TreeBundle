@@ -19,6 +19,27 @@ http://jquery.com/
 ### How-to
 
 * Install jQuery. [SonatajQueryBundle](https://github.com/sonata-project/SonatajQueryBundle) strongly suggested.
+* Add these lines in file deps:
+
+```
+[TreeBundle]
+    git=git://github.com/symfony-cmf/TreeBundle.git
+    target=/bundles/Symfony/Cmf/Bundle/TreeBundle
+```
+
+* Add this line in file app/AppKernel.php:
+
+```
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
+    );
+    // ...
+```
+
+* Launch `php bin/vendors install`
 * Include CSS & JS files in your template.
 * Call `$("#tree").treeview()` - assuming here *#tree* is the selector of your list.
 * Provide *url* value pointing to a server-side-something returning lists of children for any given node ID.
