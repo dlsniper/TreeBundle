@@ -65,7 +65,7 @@ Server must reply in JSON format, this is an example:
 
             <link href="/bundles/symfonycmftree/css/jquery.treeview.css" media="screen" type="text/css" rel="stylesheet" />
 
-            <script src="/bundles/sonatajquery/jquery-1.4.4.js" type="text/javascript"></script>
+            <script src="/bundles/sonatajquery/jquery-1.7.1.js" type="text/javascript"></script>
 
             <script src="/bundles/symfonycmftree/js/jquery.cookie.js" type="text/javascript"></script>
             <script src="/bundles/symfonycmftree/js/jquery.treeview.js" type="text/javascript"></script>
