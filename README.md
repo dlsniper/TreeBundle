@@ -105,7 +105,6 @@ Server must reply in JSON format, this is an example:
                         }
                     })
                     .bind("select_node.jstree", function (event, data) {
-                        {% set token = '@@ID@@' %}
                         window.location = "edit.php?id=" + data.rslt.obj.attr("id");
                     })
                     .delegate("a", "click", function (event, data) { event.preventDefault(); });
