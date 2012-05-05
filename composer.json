@@ -1,0 +1,24 @@
+{
+    "name": "symfony-cmf/tree-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony CMF Tree Bundle",
+    "keywords": ["Symfony CMF", "tree", "jquery"],
+    "homepage": "http://cmf.symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Symfony CMF Community",
+            "homepage": "https://github.com/symfony-cmf/TreeBundle/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/symfony": "2.1.*"
+    },
+    "autoload":{
+        "psr-0":{
+            "Symfony\\Cmf\\Bundle\\TreeBundle": ""
+        }
+    },
+    "target-dir": "Symfony/Cmf/Bundle/TreeBundle"
+}
